@@ -30,8 +30,9 @@ class View(ft.UserControl):
         self._page.controls.append(self._title)
 
         #ROW with some controls
-        self.ddyear = ft.Dropdown(label="Anno")
-        self.ddshape = ft.Dropdown(label="Shape")
+        self.ddyear = ft.Dropdown(label="Anno", on_change=self._controller.year_selected)
+        self.controller.fill_dd_year()
+        self.ddshape = ft.Dropdown(label="Shape", on_change=self._controller.shape_selected)
 
 
         # button for the "creat graph" reply
