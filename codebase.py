@@ -1,4 +1,8 @@
-def handlepath(self):
+import copy
+from geopy.distance import geodesic
+
+
+def findPath(self):
     self.maxdistance = 0
     self.bestpath = []
 
