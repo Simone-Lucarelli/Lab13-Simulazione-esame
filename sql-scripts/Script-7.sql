@@ -1,0 +1,1 @@
+select * from poweroutages p where nerc_id = 1
